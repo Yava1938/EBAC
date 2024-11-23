@@ -1,0 +1,152 @@
+header{
+    background-color:  #bada5f;
+    width: 100%;
+}
+header .logo{
+    width: 100px;
+}
+
+header nav{
+    display: inline;
+    float: right;
+    padding: 40px;
+}
+
+header nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    font-family: 'Century Gothic', sans-serif;
+    margin: 15px;
+}
+
+main section{
+    width: 100%;
+}
+h1{
+    text-align: center;
+    font-family: 'Century Gothic', sans-serif;
+    color: #bada5f;
+}
+a{
+    text-decoration: none;
+}
+
+ .main{
+    width: 80%;
+    height: auto;
+    padding-bottom: 20px;
+    display: block;
+    margin: 20px auto 10px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.45);
+}
+.main h3{
+    font-size: medium;
+    font-family: 'Century  Riot', sans-serif;
+    color: rgb(58, 54, 54);
+    padding: 5px 30px;
+}
+
+.img-main{
+    width: 80%;
+    min-width: 40%;
+    margin: 0 5.6em;
+}
+
+
+.main p{
+    font-family: 'Raleway', sans-serif;
+    padding: 0px 10px;
+    font-size: small;
+    margin: 8px 30px 22px;
+}
+
+.elementos{
+    width: 30%;
+    height: 310px;
+    display: inline-block;
+    margin: 10px 20px 30px 20px;
+    border: 0px solid;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.45);
+}
+
+.elementos h2{
+    font-size: medium;
+    font-family: 'Century  Riot', sans-serif;
+    color: rgb(58, 54, 54);
+    padding: 5px 25px;
+}
+
+.elementos img{
+    width: 100%;
+    height: 137px;
+}
+
+.elementos p{
+    padding: 0px 10px;
+    font-size: small;
+    font-family: 'Raleway', sans-serif;
+}
+.elementos input{
+    background-color: #bada5f;
+    display: block;
+    margin: 0 auto;
+    font-size: medium;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    width: 80%;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+.formulario{
+    width: 45%;
+    margin: 40px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formulario fieldset{
+    border-color: #bada5f;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+.formulario legend{
+    color: rgb(155, 152, 152);
+    margin: 5px 0px;
+}
+.formulario label{
+    display: block;
+    margin: 5px 0px;
+}
+
+.formulario input{
+    width: 90%;
+    margin: 5px;
+    padding: 5px 10px;
+    
+}
+.formulario select{
+    margin: 5px;
+    padding: 5px 10px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+.formulario textarea{
+    margin: 5px;
+    padding: 5px 10px;
+    width: 90%;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+#btnEnviar{
+    background-color:#bada5f;
+    border-radius: 5px;
+    margin: 10px 20px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+small{
+    font-family: 'Raleway', sans-serif;
+}

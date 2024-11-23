@@ -1,0 +1,83 @@
+header{
+    padding: 10px;
+    background-color: rgb(228,252, 236);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header, footer{
+    text-align: center;
+}
+header img{
+    width: 60px;
+}
+header nav{
+    width: 281px;
+    display: flex;
+    gap: 10px
+}
+
+header nav a{
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 16px;
+}
+/* main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+} */
+
+/* main{
+    display: flex;
+    flex-direction: row;
+} */
+
+.cards{
+    background-color: rgb(255, 255, 235);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 10px;
+}
+
+.card{
+    background-color: rgb(74, 235, 235);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/* aside{
+    background-color: rgb(255, 230, 230);
+} */
+
+/* main article{
+    flex: 2;
+}
+
+main aside{
+    flex: 1;
+} */
+/* article, aside{
+    padding: 10px;
+    margin: 10px;
+} */
+
+footer{
+    padding: 10px;
+    background-color: rgb(235, 248, 255);
+}
+
+@media screen and (max-width: 52em){
+    /* main{
+        grid-template-columns: 1fr;
+    } */
+    main{
+        flex-direction: column;
+    }
+
+    main article, main aside{
+        flex: 1
+    }
+    
+}

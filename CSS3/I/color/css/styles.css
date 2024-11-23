@@ -1,0 +1,25 @@
+/* p{
+    color: red;
+    background-color: aqua;
+}
+
+p{
+    color: red;
+    background-color: SpringGreen;
+}
+
+
+p{
+    color: red;
+    background-color: rgb(0, 255, 127);
+}
+ */
+
+p{
+    color: red;
+    background-color: #00FF7F;
+}
+
+span{
+    color: green;
+}

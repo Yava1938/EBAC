@@ -1,0 +1,583 @@
+.container{
+    width: 100%;
+    @include phones{
+        width: 100%
+    }
+}
+.main{
+    @include flex;
+    
+}
+
+.izquierda{
+    /* background-color: rgb(230, 137, 44); */
+    width: 20%;
+    padding: 0px 7px 0px 6px;
+    @include tablets{
+        flex: 40%
+    }
+    @include phones{
+        display: none;
+    }
+    
+    .header{
+        background-color: rgb(18 18 18);
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 0 0 5px;
+        
+        .header__item{
+                box-sizing: border-box;
+                padding: 7px 15px;
+                @include customFontSize(0.6rem);
+                width: calc(100% - 20px);
+                @include flexbox-center;
+                @include pointer;
+
+            i{
+                img{
+                    width: 25px;
+                }
+            }
+            h2{
+                @include customFont(0.9rem, 800 );
+                padding: 0 14px;
+            }
+        }
+    }
+
+    .biblioteca{
+        background-color: rgb(18 18 18);
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+        overflow: hidden;
+        .biblioteca__main{
+            @include flexbox-full;
+            padding: 7px 10px;
+
+            .biblioteca__izq{
+                @include flexbox-center;
+                .biblioteca__txt{
+                    @include customFont(.95rem, 800);
+                    padding: 0 14px;
+                }
+            }
+            .biblioteca__der{
+                cursor: pointer;
+                .biblioteca__icon{
+                    margin: 0 10px;
+                }
+            }
+        }
+        .biblioteca__opciones{
+            @include flexbox-center;
+            .biblioteca__btn{
+                margin: 0 -6px 0 10px;
+                @include pointer;
+                @include flexbox-full;
+                
+                &:first-child{ 
+                    width: 30px;
+                    height: 30px;      
+                    border-radius: 50%;         
+                    background-color: #333;
+                    border: 1px solid;
+                }
+                &:nth-child(2){
+                    background-color: $color-white;
+                    padding: 7px 13px;
+                    border-radius: 20px;
+                }
+                .biblioteca__x{
+                    width: 20px;
+                }
+
+            }
+        }
+
+        .biblioteca__busqueda{
+            width: calc(100% - 20px);
+            @include flexbox-full;
+            @include pointer;
+            padding: 10px;
+
+            .biblioteca__icon
+            img{
+               @include pointer;
+                height: 17px;
+                margin: 0 6px;
+                @include pointer;
+            }
+
+            .biblioteca__middle{
+                @include flexbox-center;
+                .middle__txt{
+                    margin: 0 5px;
+                    @include customFontSize(.68rem);
+                }
+                i,
+                .middle__img{
+                    height: 19px;
+                    @include pointer;
+                }
+            }
+
+        }
+        .biblioteca__artistas{
+            width: 100%;
+            .artistas__item{
+                @include flexbox-center;
+                @include pointer;
+                margin: 10px 12px;
+
+                .artistas__img{
+                    height: 36px;
+                    width: 36px;
+                    border-radius: 50%;
+                }
+                .artistas__name{
+                    margin: 0 12px;
+                    color: #fff;
+                    @include customFont(.88rem, 600);
+
+                }
+                &:nth-child(10) .artistas__name{
+                    color: #1fc258;
+                }
+                
+
+            }
+        }
+    }
+}
+
+
+.centro{ 
+    width: 60%;
+    @include tablets{
+        flex: 2
+    }
+    @include phones{
+        flex: 3;
+    }
+    
+    
+    .inicio{
+        border-radius: 10px 10px 0px 0px;
+        background-image: url('../img/artistas/coldpaly.jpg');
+        background-size: cover;
+        
+        /* opacity: .75; */
+        background-position: center -120px;
+        height: 360px;
+        overflow: hidden;
+
+        .main{
+            @include flexbox-full;
+            color: #333;
+            padding: 0 15px;
+            margin-bottom: 40px;
+            .direccion{
+                .direccion__btn{ 
+                @include pointer;
+                border-radius: 50%;
+                border: none;
+                @extend %colorBtn_1;
+                margin: 10px 2px;
+                width: 29px;
+                height: 29px;
+                .direccion__img{
+                    @include item-center;
+                    width: 18px;
+                }
+
+            }
+            }
+            .personal{
+            @include flexbox-center;
+            .rnd{
+                width: 32px;
+                height: 32px;
+            }
+            .personal__btn{
+                @include pointer;
+                border-radius: 50%;
+                border: none;
+                @extend %colorBtn_1;
+                margin: 10px 2px;
+                    
+                .personal__item{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                .personal__avatar{
+                    width: 22px;
+                }
+                .personal__txt{
+                    @include customFontSize(.6rem);
+                    margin: 0 3px;
+                }
+                .icon__dw{
+                    width: 25%;
+                }
+                &:first-child{
+                    @include flexbox-center;
+                    border-radius: 25px;
+                    width:  92px;
+                    height: 28px;
+                    color: $color-white;
+                }
+            }
+           
+            }
+        }    
+        
+        .artista{
+        .artista__verificado{
+            margin: 142px 10px -1px;
+            @include flexbox-center;
+            
+            .artista__img{
+                width: 20px;
+            }
+        .artista__txt{
+            @include customFontSize(.5rem);
+            color: $color-white;
+        }
+        }
+        .artista__name{
+            h1{
+                    @include customFont(4.5rem, 800);
+                    margin: 0;
+                    color: $color-white;
+            }
+        }
+        .artista__oyentes{
+            word-spacing: 2px;
+            @include customFont(.6rem,400 );
+            color: $color-white;
+            padding: 0 20px;
+        }
+        }
+
+    }
+    
+    .lista{
+        height: 370px;
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgb(69 89 113), rgb(23 28 33), rgb(0 0 0));
+        .lista__header{
+            @include flexbox-center;
+            padding: 20px;
+            
+            button{
+                margin: 0 10px;
+                @include pointer;
+                
+                &:first-child{
+                    background-color: #1fc258;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                }
+                &:nth-child(2){
+                    background-color: transparent;
+                    @extend %colorBtn_2;
+                    color: $color-white;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                }
+
+            }
+            img{
+                @include pointer;
+            }
+
+        }
+        .centro__title{
+            color: $color-white;
+            @include customFont(.97rem, 700);
+            margin: 0 10px;
+        }
+
+        .canciones{
+            width: 100%;
+            margin: 0 0 15px;
+            .cancion__item{
+                @include pointer;
+               @include flexbox-full;
+                margin-bottom: -20px;
+                @include customFontSize(.8rem);
+                .cancion__info1{
+                    @include flexbox-full;
+                    .cancion__activo{
+                        width: 25px;
+                        margin: 0 10px 0 30px;
+                    }
+    
+                    .cancion__album{
+                        width: 25px;
+                    }
+
+                    .cancion__name{
+                        padding-left: 15px;
+                        width: 182px;
+                    }
+                }
+
+                .cancion__info2{
+                    margin: 0 25px;
+                    @include flexbox-full;
+                    
+                    .cancion__reporducciones{
+                        flex: 2;
+                        @include customFontweight(400);
+                        @include tablets{
+                            display: none;
+                        }
+                    }
+                    .cancion__reproducciones,
+                    .cancion__duracion{
+                        padding-right: 0px;
+                        margin: 0 70px;
+                        @include customFontweight(400)
+
+                    }
+                }
+
+            }
+        }
+
+
+}
+}
+
+
+.derecha{   
+    @include tablets{
+        display: none;
+    }
+    width: 20%;
+    padding: 0px 1px 0px 6px;
+    .container__derecho{
+        border-radius: 10px;
+        width: 100%;
+        background-color: rgb(18 18 18);
+        .header{
+            @include flexbox-full;
+            padding: 10px 10px 0px;
+
+            .header__txt{
+                @include customFont(.8rem,700 );
+                color: $color-white;
+            }
+            .header__x{
+                @include pointer;
+                width: 20px;
+            }
+        }
+        .container__main{
+            width: 100%;
+            @include flexbox-content-center;
+            .main__img{
+                width: 93%;
+                border-radius: 10px;
+            }
+        }
+        
+        .container__song{
+            @include flexbox-full;
+            
+            .song__name{
+                @include customFontSize(1.3rem);
+                color: $color-white;
+                margin: 11px 10px -5px;
+            }
+            .song__group{
+                @include customFont(.8rem,400 );
+                margin: 5px 10px 10px;
+            }
+            .song__icons{
+                padding: 10px;
+            }
+            
+            .song__icon{
+                @include pointer;
+                width: 15px;
+            margin: 0 3px;
+        }
+        }
+
+        .container__info{
+            padding: 10px;
+            .info__header{
+                background-image: url('../img/artistas/coldplay_info.jpg');
+                background-size: cover;
+                background-position: center center;
+                height: 153px;
+                width: 100%;
+                border-radius: 10px;
+                .info__txt{
+                    color: $color-white;
+                    font-size: .7rem;
+                    padding: 13px;
+                    margin: 0;
+                    font-weight: 700;
+                }
+            }
+
+            .info__main{
+                .info__name{
+                    color: $color-white;
+                    @include customFontSize(.8rem);
+                    margin: 10px 0 -5px;
+                }
+                .info__info{
+                    @include flexbox-full;
+                    margin: 0;
+
+                    .info__oyentes{
+                        @include customFont(.74rem, 400)
+                    }
+
+                    .info__unfollow{
+                        @include pointer;
+                        background: transparent;
+                        color: $color-white;
+                        @extend %colorBtn_2;
+                        @include customFontSize(.6rem);
+                        width: 50%;
+                        border-radius: 20px;
+                        padding: 5px;
+                        
+                    }
+                }
+                .info__data{
+                    @include customFontSize(.7rem)
+                }
+
+            }
+         
+            
+        }
+
+    
+}
+    
+}
+
+.reproductor{
+    margin: 5px 0 0;
+    width: 100%;
+    @include flexbox-full;
+    .reproductor__izquierda{
+        @include flexbox-center;
+        flex: 1;
+        padding: 0 10px;
+
+        .izquierda__img{
+            @include pointer;
+            width: 45px;
+        }
+
+        .reproductor__name{
+            margin: 0 10px;
+            .izquierda__song{
+                @include customFont(.78rem,600 );
+                margin: 0;
+            }
+            .izquierda__group{
+                @include customFont(.69rem,400 );
+                margin: 0;
+            }
+        }
+
+        .izquierda__like{
+            width: 13px;
+            @include pointer;
+        }
+    }
+
+    .reproductor__centro{
+        
+        flex: 2;
+
+        .centro__top{
+            @include flexbox-center-center;
+            button{
+                @include pointer;
+                background-color: $color-white;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                border: none;
+                @include flexbox-center-center;
+                 .reproductor__icons{
+                    @include pointer;
+                    width: 25px;
+                 }
+
+            }
+            .reproductor__icons{
+                width: 25px;
+                @include pointer;
+                margin: 0 10px
+            }
+
+        }
+        .centro__bottom{
+            @include flexbox-center;
+            margin: 10px auto;
+
+            .barra__time{
+                width: 100%;
+                height: 2.8px; 
+                border-radius: 20px;
+            }
+
+            .barra__time::-webkit-progress-bar {
+                background-color: $color-white;
+            }
+
+            .barra__time::-webkit-progress-value {
+                background-color: $color-white;
+                border-radius: 5px;
+            }
+
+            .centro__time{
+                font-size: .79rem;
+                margin: 0 8px;
+            }
+            
+        }
+    }
+
+    .reproductor__derecha{
+        @include flexbox-center;
+        @include hide{
+            display: none;
+        }
+        padding: 0 10px;
+        .derecha__img{
+            margin: 0 3px;
+            @include pointer;
+            width: 13px;
+        }
+
+        .barra__volumen{
+            width: 100px;
+            height: 2.8px; 
+            border-radius: 20px;
+        }
+        .barra__volumen::-webkit-progress-bar {
+            background-color: rgba(77,77,77,1); 
+            }
+
+            .barra__volumen::-webkit-progress-value {
+            background-color: $color-white; 
+            border-radius: 5px;
+                }
+}
+}

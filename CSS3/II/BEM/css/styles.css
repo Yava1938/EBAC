@@ -1,0 +1,85 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 120px;
+}
+
+.header__menu{
+    display: flex;   
+    gap: 50px;
+}
+
+.header__user{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.header__icon{
+    cursor: pointer;
+}
+
+.header__icon--secondary{
+    opacity: .7;
+}
+
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    gap: 30px 20px;
+    margin: 30px auto;
+}
+
+.products__img{
+    width: 100%;
+}
+
+.products__title{
+    font-size: .77rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.products__btn{
+    display: block;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.products__btn--disable{
+   background-color: #999;
+}

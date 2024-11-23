@@ -1,0 +1,64 @@
+/* *{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+article{
+    background-color: #81f7ff;
+}
+p, h1, span, section{
+    font-size: 30px;
+}
+h1{
+    font-size: 20px;
+}
+.btn-main{
+    color: #fff;
+    background-color: darkolivegreen;
+}
+
+.bold{
+    font-weight: bold;
+
+}
+.txt{
+    font-size: 10px;
+}
+
+
+article > p{
+    font-size: 20px;
+}
+
+input[type="text"]{
+    background-color: blue;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+
+
+p:hover{
+background-color: red;
+}
+
+article > p:first-child{
+    font-size: 80px;
+}
+
+article > p:nth-child(2){
+    font-size: 50px;
+}
+
+article > p:last-child{
+    color: brown;
+} */
+
+
+p{
+    font-size: 40px;
+}
+
+.txt{
+    font-size: 50px;
+}

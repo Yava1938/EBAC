@@ -1,0 +1,10 @@
+p{
+    font-family: 'Sixtyfour', sans-serif; /* Fuente de texto, puede ser de Google Fonts */
+    text-align: center; /* Alinea el texto */
+    letter-spacing: 15px; /* Espaciado entre cada letra */
+    text-decoration: underline; /* Decoracion del texto, subrayado entre otras */
+    text-transform: lowercase; /* Cambia mayusculas a minusculas */
+    line-height: 5; /*Dar espacio entre lineas  */
+    word-spacing: 20px; /* Espacio entre palabras */
+    text-shadow: 10px 10px 15px #000; /* Sombreado del texto */
+}

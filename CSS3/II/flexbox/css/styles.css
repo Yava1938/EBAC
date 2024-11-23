@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 300px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container article{
+    background-color: blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: calc(33.33% - 20px);
+}

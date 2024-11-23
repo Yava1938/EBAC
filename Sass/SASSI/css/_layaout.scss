@@ -1,0 +1,95 @@
+
+body{
+    font-family: $fontFamily;
+    font-weight: 600;
+}
+html, body, p, a{
+    margin: 0
+}
+
+header{
+    @include flexbox;
+    background-color: $grey;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    img{
+        width: 100px;
+    }
+    nav{
+        @include flexbox;
+        gap:10px;
+        @include laptos{
+            display: none;
+        }
+         /* @media screen and (max-width: 70rem){
+        display: none;
+        } */
+        a{
+            font-weight: 500;
+            font-size: 1rem;
+            @extend %link
+        }
+    }
+    article{
+        @include flexbox;
+        gap:10px;
+        i{
+            cursor: pointer;
+            transition: all .2s ease;
+            &:hover{
+                transform: scale(1.12);
+            }
+          &:first-child{
+            width: 24px;
+          }  
+          &:last-child{
+            /* @include avatar(50px, $type: circle) */
+            width: 23px;
+          }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+footer{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: $main-color;
+    @include flexbox;
+    @include phones{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    article{
+        img{
+            width: 80px;
+        }
+        nav{
+            @include flexbox;
+            flex-direction: column;
+            gap: 10px;
+            @include tablets{
+                flex-direction: row
+            };
+
+            @include phones{
+                flex-direction: column;
+
+            }
+            a{
+                @extend %link;
+            }
+        }
+    
+    > a{
+        display: block;
+        @extend %link;
+    }}
+}

@@ -1,0 +1,21 @@
+header {
+    padding: 20px 40px;
+    border: 2px dashed #726161;
+}
+
+header .logo{
+    width: 100px;
+}
+
+header nav {
+    display: inline;
+    float: right;
+    padding-top: 40px;
+}
+
+header nav a{
+    margin: 0px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}

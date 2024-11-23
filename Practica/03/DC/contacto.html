@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pr&aacutectica contacto</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Acerca de nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Compartenos tus datos para recibir atenci&oacute;n personalizada!</h1>
+        </section>
+        <section>
+            <article class="formulario">
+                <form>
+                    <fieldset>
+                        <legend>Información de usuario</legend>
+                        <div>
+                            <label for="nombre" id="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email">Correo Electronico</label>
+                            <input type="email" name="email" id="email" placeholder="Doe@example.com">
+                        </div>
+                        <div>
+                        <label for="servicio">Servicio</label>
+                        <select name="servicio" id="servicio">
+                            <option> -- Selecciona un servicio</option>
+                            <option value="internet">Internet</option>
+                            <option value="web">Desarrollo web</option>
+                            <option value="soporte">soporte t&eacute;cnico</option>
+                            <option value="computo">Componentes de c&oacute;mputo</option>
+                            <option value="asesoramiento">asesoramiento t&eacute;cnico</option>
+                        </select>
+                    </div>
+                        <div>
+                            <label for="comentario">Comentarios</label>
+                            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Enviar" id="btnEnviar">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <center>
+            <hr>
+            <small>&copy; 2024 - DC-TI &amp; Ebac</small>
+        </center>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Practica 2 - Reseñas</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.webp" alt="Logo rollo fotografico" width="100">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="reseñas.html">Crear Reseña</a>
+            <a href="nosotros.html">A cerca de nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>¿Quieres publicar tu reseña?</h2>
+            <p>Aqui puedes hacerlo. llena el siguiente formulario</p>
+        </section>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Información de usuario</legend>
+                    <div>
+                        <label for="nombre" id="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </div>
+                    <div>
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información de la reseña</legend>
+                    <div>
+                        <label for="pelicula">Pelicula</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="genero">Genero</label>
+                        <select name="genero" id="genero">
+                            <option> -- Selecciona un genero</option>
+                            <option value="comedia">Comedia</option>
+                            <option value="Terror">Terror</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Musical">Musical</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="reseña">Reseña</label>
+                        <textarea name="reseña" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </main>
+    <br>
+    <footer>
+        <center>
+            <small>&copy; 2024 - iMovie.com &amp; Ebac</small>
+        </center>
+    </footer>
+</body>
+</html>

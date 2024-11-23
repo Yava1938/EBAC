@@ -1,0 +1,28 @@
+ .main-btn{
+    @extend %btn;
+    background-color: chartreuse;
+}
+.secondary-btn{
+    @extend %btn;
+    background-color: dimgray;
+}
+
+main{
+    article{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        @include shadowContainer(rgb(198, 27, 192), 20px, 2px);
+
+       /*  &:first-child{
+            @include shadowContainer(10px, green, red );
+        } */
+        &.mixin{
+            @include shadowContainer($main-color, 10px, 0px)
+        }
+        /* &.three{
+            @include shadowContainer(10px, rgb(168, 10, 168) ,brown )
+        } */
+        
+    }
+}

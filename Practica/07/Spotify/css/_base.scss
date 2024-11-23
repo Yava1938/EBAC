@@ -1,0 +1,89 @@
+
+$color-txt: rgb(179 179 179);
+$color-black:  rgb(0, 0, 0);
+$color-white: #fff;
+
+@mixin flex{
+    display: flex;
+}
+@mixin pointer{
+    cursor: pointer;
+    transition: all .2s ease;
+     &:hover{
+        transform: scale(1.12);
+    }
+}
+
+@mixin item-center{
+    align-items: center;
+}
+@mixin content-between{
+    justify-content: space-between;
+}
+@mixin content-center{
+    justify-content: center;
+}
+@mixin flexbox-content-center{
+    @include flex;
+    @include content-center;
+}
+@mixin flexbox-center-center{
+    @include flex;
+    @include content-center;
+    @include item-center;
+}
+@mixin flexbox-center{
+    @include flex;
+    @include item-center;
+}
+@mixin flexbox-between{
+    @include flex;
+    @include content-between;
+}
+@mixin flexbox-full{
+    @include flexbox-between;
+    @include flexbox-center;
+}
+
+@mixin customFontSize($size){
+    font-size: $size
+};
+@mixin customFontweight($weight){
+    font-weight: $weight
+};
+
+@mixin customFont($size, $weight){
+    @include customFontSize($size);
+    @include customFontweight($weight)
+};
+@mixin hide{
+    @media screen and (max-width: 40rem){
+        @content 
+    }
+};
+
+@mixin laptos{
+    @media screen and (max-width: 70rem){
+        @content 
+    }
+};
+
+@mixin tablets {
+    @media screen and (max-width: 60rem){
+        @content 
+    }
+};
+
+@mixin phones {
+    @media screen and (max-width: 50rem){
+        @content 
+    }
+};
+
+%colorBtn_1{
+    background: rgba(76, 83, 90, 0.5);
+}
+%colorBtn_2{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+

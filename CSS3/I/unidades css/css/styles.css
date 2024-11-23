@@ -1,0 +1,45 @@
+html{
+    font-size: 20px;
+}
+
+/* Medidas relativas */
+main{
+    width: 90%;
+    background-color: rgb(216, 235, 251);
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+/* .container-a {
+    width: 1em;
+    background-color: rgb(51,214,214);
+    border: 2px solid blue;
+    margin-bottom: 20px;
+    display: inline-block;
+} */
+
+.container-a {
+    width: 49%;
+    background-color: rgb(196, 196, 196);
+    border: 2px solid blue;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 2em;
+}
+
+/* Medidas relativas */
+.container-b {
+    width: 49%;
+    background-color: #8a2be2;
+    display: inline-block;
+    font-size: .5rem;
+}
+
+/* Medidas absolutas 
+.container-a {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(51,214,214);
+    border: 2px solid blue;
+    margin-bottom: 20px;
+} */

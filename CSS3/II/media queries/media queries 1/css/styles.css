@@ -1,0 +1,27 @@
+/* @media media-type and (media-rule){} */
+div{
+    width: 50%;
+    margin:  0 auto;
+    padding: 30px;
+    background-color: rgb(21, 139, 100);
+}
+
+p{
+    font-size: 15px;
+    text-align: right;
+    line-height: 3;
+}
+@media screen and (max-width: 900px) and (min-width: 700px){
+    div{
+        width: 100%;
+        padding: 0;
+        background-color: tomato;
+    }
+    div p{
+        font-size: 8px;
+        text-align: center;
+        line-height: 1;
+
+
+    }
+}

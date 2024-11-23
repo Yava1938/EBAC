@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <h2>Registro de comercios</h2>
+    <p>En está sección se podran registrar los nuevos comercios que busquen ser participantes del area metropolitano.</p>
+    <p>Para realizar correctamente el registro, deberan cumplir con los siguientes requisitos:</p>
+
+    <ul>
+        <li>Nombre del representante del comercio</li>
+        <li>Telefono celular activo</li>
+        <li>Correo electronico</li>
+        <li>Nombre de comercio Disponible</li>
+        <li>Giro del Negocio</li>
+        <li>Estatus del comercio</li>
+        <li>Logo</li>
+    </ul>
+    <form action="POST">
+        <fieldset>
+            <legend>Informacion del dueño</legend>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Jonh Doe">
+            </div>
+    
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="text" name="telefono" id="telefono" required>
+            </div>
+    
+            <div>
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email" required placeholder="employes@example.com">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion del comercio</legend>
+            <div>
+                <label for="nombre">Nombre del comercio</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre de Comercio">
+            </div>
+    
+            <div>
+                <label for="tel_comercio">Telefono del comercio</label>
+                <input type="text" name="tel_comercio" id="tel_comercio" required>
+            </div>
+    
+            <div>
+                <label for="especialidad">Giro comercial</label>
+                <select name="especialidad" id="especialidad">
+                        <option> -- Selecciona un giro comercial</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Financiero">Financiero</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Moda">moda</option>
+                    </select>
+            </div>        
+            <div>
+                <label>Estatus del comercio</label>
+                <input type="radio" name="estatusActivo" value="Activo">Activo
+                <input type="radio" name="estatusInactivo" id="Inactivo">Inactivo
+            </div>
+            <div>
+                <label for="logo">Inserte el logo de su comercio</label>
+                <input type="file" name="logo" id="logo">
+            </div>
+        </fieldset>
+
+<input type="submit" value="enviar">
+    </form>
+
+
+    
+    <h5>Regresar al inicio da clic
+    <a href="./index.html">aqui!</a></h5>
+</body>
+</html>

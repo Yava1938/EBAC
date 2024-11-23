@@ -1,0 +1,142 @@
+footer article > a, footer article nav a, header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.secondary-btn, .main-btn {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  width: 50%;
+  font-weight: 600;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+html, body, p, a {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(71, 71, 71);
+  padding: 20px;
+  box-sizing: border-box;
+  align-items: center;
+}
+header img {
+  width: 100px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  /* @media screen and (max-width: 70rem){
+  display: none;
+  } */
+}
+@media screen and (max-width: 70rem) {
+  header nav {
+    display: none;
+  }
+}
+header nav a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+header article {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+header article i {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+header article i:hover {
+  transform: scale(1.12);
+}
+header article i:first-child {
+  width: 24px;
+}
+header article i:last-child {
+  /* @include avatar(50px, $type: circle) */
+  width: 23px;
+}
+header article i img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(0, 46, 0);
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 48rem) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer article img {
+  width: 80px;
+}
+footer article nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+@media screen and (max-width: 60rem) {
+  footer article nav {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 48rem) {
+  footer article nav {
+    flex-direction: column;
+  }
+}
+footer article > a {
+  display: block;
+}
+
+.main-btn {
+  background-color: chartreuse;
+}
+
+.secondary-btn {
+  background-color: dimgray;
+}
+
+main article {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2px rgb(198, 27, 192);
+  padding: 20px;
+  border-radius: 15px;
+  background-color: rgb(198, 27, 192);
+  /*  &:first-child{
+       @include shadowContainer(10px, green, red );
+   } */
+  /* &.three{
+      @include shadowContainer(10px, rgb(168, 10, 168) ,brown )
+  } */
+}
+main article.mixin {
+  box-shadow: 0px 0px 0px rgb(0, 46, 0);
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(0, 46, 0);
+}/*# sourceMappingURL=main.css.map */

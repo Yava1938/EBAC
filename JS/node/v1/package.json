@@ -1,0 +1,16 @@
+{
+  "name": "node-ejercicio-v2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Yael Vargas, yava1938@outlook.com",
+  "license": "ISC",
+  "description": "ejercio practico Node",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

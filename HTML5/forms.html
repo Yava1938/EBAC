@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>Informacion del usuario</legend>
+            <div>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personaliza tu pizza</legend>
+            <div>
+                <label for="Especialidad">Especialidad</label>
+                <select name="Especialidad" id="">
+                    <option> -- Selecciona una especialidad</option>
+                    <option value="Hawaiana">Hawaiana</option>
+                    <option value="Mexicana">Mexicana</option>
+                </select>
+            </div>
+        <div>
+            <label > Indicaciones Extras</label>
+            <textarea cols="30" rows="10"></textarea>
+        </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

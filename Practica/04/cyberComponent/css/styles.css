@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    background-color: #0a173a;
+    width: 100%;
+}
+
+header img{
+    width: 100px;
+}
+
+header nav{
+    display: inline;
+    float: right;
+    padding: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size:large;
+    color: #fff;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+header nav a:active{
+ box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.65);
+}
+
+.productos{
+    width: 100%;
+    margin: 40px auto;
+}
+
+.productos article{
+    display: inline-block;
+    width: 20%;
+    margin: 15px 25px;
+    border: 0px solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.productos article:hover{
+    box-shadow: 9px 7px 5px 1px rgba(0,0,0,0.45);
+
+}
+
+.productos:first-child:hover{
+    box-shadow: 9px 7px 5px 1px #3254b1;;
+
+}
+.productos:last-child:hover{
+    box-shadow: 9px 7px 5px 1px #e4f77b;;
+
+}
+.productos h3{
+    padding: 0 40px;
+}
+.productos h4{
+    font-size: medium;
+    padding: 0 15px;
+    color: #494949;
+    margin: 21px 0 0;
+    display: inline-block;
+}
+.productos .resaltar{
+    color: red;
+    float: right;
+    font-size: small;
+    margin: 0;
+}
+span{
+    text-decoration: line-through;
+    color: #7c7777;
+    
+}
+
+.productos article img{
+    width: 40%;
+    padding: 0 67px;
+}
+.productos article p{
+    padding: 0 20px;
+    font-size: small;
+}
+.bn1{
+    background-image: url('../img/banner1.png');
+
+}
+.bn2{
+    background-image: url('../img/banner2.jpg');
+}
+.banner{
+    width: 100%;
+    margin: 25px 0;
+    padding: 50px 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.main h3{
+    padding: 0 10px;
+}
+
+.main  article{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.main img{
+    padding: 20px 30%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#icon{
+    width: 15px;
+}
+
+.formulario{
+    width: 45%;
+    margin: 40px auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+.formulario fieldset{
+    border-color: #344c9b;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+.formulario legend{
+    color: rgb(83, 82, 82);
+    margin: 5px 0px;
+}
+.formulario label{
+    display: block;
+    margin: 5px 0px;
+}
+
+.formulario input{
+    width: 90%;
+    margin: 5px;
+    padding: 5px 10px;
+    
+}
+.formulario select{
+    margin: 5px;
+    padding: 5px 10px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+.formulario textarea{
+    margin: 5px;
+    padding: 5px 10px;
+    width: 90%;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+input[type="submit"]{
+    background-color: #6a9f58;
+    border-radius: 10px;
+    color: #fff;
+    margin: 10px 20px;
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
